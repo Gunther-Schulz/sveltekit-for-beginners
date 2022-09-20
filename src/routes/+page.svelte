@@ -1,11 +1,14 @@
 <script>
 	import { fly } from 'svelte/transition'
+	// import '$src/styles/app.css'
 </script>
 
 <svelte:head>
 	<title>Twittr</title>
 </svelte:head>
-
+<!-- <h1 class="text-2xl font-bold underline">
+	Hello Tailwind!
+</h1> -->
 <main
 	class="container"
 	in:fly={{ x: -100, duration: 250, delay: 300 }}
