@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-	<title>Twittr</title>
+	<title>Twittr V</title>
 </svelte:head>
 
 <main
