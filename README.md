@@ -13,7 +13,7 @@ git clone https://github.com/joysofcode/sveltekit-for-beginners.git
 📦️ Install dependencies
 
 ```sh
-npm i
+pnpm i
 ```
 
 ## Database
@@ -27,19 +27,19 @@ DATABASE_URL="file:./dev.db"
 🔨 Create the database from the Prisma schema
 
 ```sh
-npx prisma db push
+pnpm prisma db push
 ```
 
 🌱 Seed the database
 
 ```sh
-npx prisma db seed
+pnpm prisma db seed
 ```
 
 🔎 Inspect your database with Prisma Studio
 
 ```
-npx prisma studio
+pnpm prisma studio
 ```
 
 ## Development
@@ -47,7 +47,7 @@ npx prisma studio
 🦄 Start the project and open http://localhost:3000/
 
 ```sh
-npm run dev
+pnpm dev
 ```
 
 ## Production
@@ -55,5 +55,5 @@ npm run dev
 🔨 Build and preview
 
 ```sh
-npm run build && npm run preview
+pnpm build && pnpm preview
 ```
