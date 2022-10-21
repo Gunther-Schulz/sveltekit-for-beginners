@@ -7,4 +7,13 @@ declare namespace App {
 	// interface Platform {}
 	// interface Session {}
 	// interface Stuff {}
+	interface Platform {
+		env: {
+			COUNTER: DurableObjectNamespace
+		}
+		context: {
+			waitUntil(promise: Promise<unknown>): void
+		}
+		caches: CacheStorage & { default: Cache }
+	}
 }
