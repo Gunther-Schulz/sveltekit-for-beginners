@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Compose from '$lib/shared/compose.svelte'
+	// import Compose from '$lib/shared/compose.svelte'
 	import Tweet from '$lib/shared/tweet.svelte'
 	import type { PageServerData } from './$types'
 
@@ -12,7 +12,7 @@
 
 <h1>Feed</h1>
 
-<Compose />
+<!-- <Compose /> -->
 
 {#each data.tweets as tweet (tweet.id)}
 	<Tweet {tweet} />
