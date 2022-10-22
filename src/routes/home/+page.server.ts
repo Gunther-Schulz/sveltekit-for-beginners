@@ -44,14 +44,14 @@ export const load: PageServerLoad = async () => {
 	return { tweets }
 }
 
-export const actions: Actions = {
-	createTweet: async ({ request }) => {
-		await createTweet(request)
-	},
-	deleteTweet: async ({ request }) => {
-		await removeTweet(request)
-	},
-	likeTweet: async ({ request }) => {
-		await likeTweet(request)
-	},
-}
+// export const actions: Actions = {
+// 	createTweet: async ({ request }) => {
+// 		await createTweet(request)
+// 	},
+// 	deleteTweet: async ({ request }) => {
+// 		await removeTweet(request)
+// 	},
+// 	likeTweet: async ({ request }) => {
+// 		await likeTweet(request)
+// 	},
+// }
