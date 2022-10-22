@@ -1,12 +1,12 @@
 import { error } from '@sveltejs/kit'
 import type { Actions, PageServerLoad } from './$types'
 
-import {
-	createTweet,
-	getTweets,
-	removeTweet,
-	likeTweet,
-} from '$lib/utils/prisma'
+// import {
+// 	createTweet,
+// 	getTweets,
+// 	removeTweet,
+// 	likeTweet,
+// } from '$lib/utils/prisma'
 
 export const load: PageServerLoad = async () => {
 	// const tweets = await getTweets()
