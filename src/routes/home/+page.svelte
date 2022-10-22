@@ -1,9 +1,9 @@
 <script lang="ts">
 	// import Compose from '$lib/shared/compose.svelte'
 	import Tweet from '$lib/shared/tweet.svelte'
-	import type { PageServerData } from './$types'
+	// import type { PageServerData } from './$types'
 
-	export let data: PageServerData
+	export let data
 </script>
 
 <svelte:head>

@@ -1,5 +1,8 @@
 import { error } from '@sveltejs/kit'
-import type { Actions, PageServerLoad } from './$types'
+// import type {
+// 	Actions,
+// 	PageServerLoad,
+// } from '../../../.svelte-kit/types/src/routes/home/$types'
 
 // import {
 // 	createTweet,
@@ -8,7 +11,7 @@ import type { Actions, PageServerLoad } from './$types'
 // 	likeTweet,
 // } from '$lib/utils/prisma'
 
-export const load: PageServerLoad = async () => {
+export const load = async () => {
 	// const tweets = await getTweets()
 	const tweets = JSON.parse(`
 	[
