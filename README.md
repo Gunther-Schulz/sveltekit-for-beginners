@@ -20,11 +20,42 @@ pnpm i
 
 ## Database
 
-✏️ Rename `.env.example` to `.env`
+Check for provisioned ips
 
 ```
-DATABASE_URL="file:./dev.db"
+fly ips list
 ```
+
+If needed, provision
+
+```
+fly ips allocate-v4
+```
+
+Create database
+
+```
+fly postgres create
+```
+
+✏️ Rename `.env.example` to `.env`
+Set the `DATABASE_URL` to the database url from the previous step
+
+If `fly.toml` does not exists, pull
+
+```
+fly config save --app sveltekit-for-beginners
+```
+
+Set internal and external ports (https://fly.io/docs/postgres/#external-port-configuration)
+
+Deploy fly.toml
+
+```
+fly deploy . --app sveltekit-for-beginners --image flyio/postgres:14
+```
+
+Update .env with the new database url
 
 🔨 Create the database from the Prisma schema
 
